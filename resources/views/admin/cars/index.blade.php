@@ -3,15 +3,13 @@
 @section('title', 'Cars')
 @section('content')
     <div class="container">
-        <h1>Cars List</h1>
-        <a href="{{ url('/admin/car/create') }}" class="btn btn-primary mb-3">Add New Car</a>
         @if ($cars->isEmpty())
             <p>No cars available.</p>
         @else
             <table class="table">
                 <thead>
                     <tr>
-                        <th>ID</th>
+                        <th>No</th>
                         <th>Nama</th>
                         <th>Voltage</th>
                         <th>Capacity</th>
@@ -21,9 +19,9 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach ($cars as $car)
+                    @foreach ($cars as $index => $car)
                         <tr>
-                            <td>{{ $car->id }}</td>
+                            <td>{{ $index + 1 }}</td>
                             <td>{{ $car->nama }}</td>
                             <td>
                                 @foreach ($car->voltages as $voltage)

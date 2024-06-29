@@ -1,22 +1,21 @@
-<!-- resources/views/admin/Voltage/index.blade.php -->
+<!-- resources/views/admin/capacity/index.blade.php -->
 @extends('admin.layout.baselayout')
 @section('title', 'Capacities List')
 @section('content')
     <div class="container">
-        <a href="{{ route('capacities.create') }}" class="btn btn-primary">Add Capacity</a>
         <table class="table mt-4">
             <thead>
                 <tr>
-                    <th>ID</th>
+                    <th>No</th>
                     <th>Amount Capacity</th>
                     <th>Type</th>
                     <th>Actions</th>
                 </tr>
             </thead>
             <tbody>
-                @foreach ($capacities as $capacity)
+                @foreach ($capacities as $index => $capacity)
                     <tr>
-                        <td>{{ $capacity->id }}</td>
+                        <td>{{ $index + 1 }}</td>
                         <td>{{ $capacity->amount_capacity }} kWh </td>
                         <td>{{ $capacity->type }}</td>
                         <td>

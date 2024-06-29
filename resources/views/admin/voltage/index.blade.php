@@ -3,7 +3,6 @@
 @section('title', 'Voltage List')
 @section('content')
     <div class="container">
-        <a href="{{ route('voltages.create') }}" class="btn btn-primary">Add New Voltage</a>
 
         @if (session('success'))
             <div class="alert alert-success">{{ session('success') }}</div>
@@ -12,16 +11,16 @@
         <table class="table mt-3">
             <thead>
                 <tr>
-                    <th>ID</th>
+                    <th>No</th>
                     <th>Voltage</th>
                     <th>Type</th>
                     <th>Actions</th>
                 </tr>
             </thead>
             <tbody>
-                @foreach ($voltages as $voltage)
+                @foreach ($voltages as $index => $voltage)
                     <tr>
-                        <td>{{ $voltage->id }}</td>
+                        <td>{{ $index + 1 }}</td>
                         <td>{{ $voltage->voltage }} V</td>
                         <td>{{ $voltage->type }}</td>
                         <td>

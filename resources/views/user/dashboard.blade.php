@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="{{ asset('assetsu/css/style.css') }}">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
     <!-- Favicons -->
-    <link href="{{asset('assetsu/img/favicon.png')}}" rel="icon">
-    <link href="{{asset('assetsu/img/apple-touch-icon.png')}}" rel="apple-touch-icon">
+    <link href="{{asset('assetsu/img/c.jpg')}}" rel="icon">
+    <link href="{{asset('assetsu/img/c.jpg')}}" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700"

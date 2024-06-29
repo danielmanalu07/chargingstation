@@ -3,22 +3,11 @@
 
 @section('content')
 
-    <!-- breadcrumb -->
-    <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="{{ url('/admin/dashboard') }}">Dashboard</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Customers</li>
-        </ol>
-    </nav>
 
     <!-- inisial value -->
     <input type="hidden" name="name" id="name" value="{{ isset($_GET['name']) ? $_GET['name'] : '' }}">
 
     <div class="card mb-4">
-        <div class="card-header">
-            <i class="fas fa-fw fa-solid fa-users me-1"></i>
-            Customers
-        </div>
         <div class="card-body">
             <table class="table" id="datatablesSimple">
                 <thead>

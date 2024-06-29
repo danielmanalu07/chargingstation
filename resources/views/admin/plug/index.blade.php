@@ -3,7 +3,6 @@
 @section('title', 'Plugs List')
 @section('content')
 <div class="container">
-    <a href="{{ url('/admin/plugs/create') }}" class="btn btn-primary mb-3">Add New Plug</a>
     @if(session('success'))
         <div class="alert alert-success">{{ session('success') }}</div>
     @endif
@@ -13,15 +12,15 @@
         <table class="table">
             <thead>
                 <tr>
-                    <th>ID</th>
+                    <th>No</th>
                     <th>Nama</th>
                     <th>Actions</th>
                 </tr>
             </thead>
             <tbody>
-                @foreach($plugs as $plug)
+                @foreach($plugs as $index => $plug)
                     <tr>
-                        <td>{{ $plug->id }}</td>
+                        <td>{{ $index + 1}}</td>
                         <td>{{ $plug->nama }}</td>
                         <td>
                             <a href="{{ route('plugs.show', $plug->id) }}" class="btn btn-info">View</a>

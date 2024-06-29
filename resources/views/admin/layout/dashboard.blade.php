@@ -10,8 +10,8 @@
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="{{ asset('assets/img/favicon.png') }}" rel="icon">
-    <link href="{{ asset('assets/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
+    <link href="{{ asset('assetsu/img/c.jpg') }}" rel="icon">
+    <link href="{{ asset('assetsu/img/c.jpg') }}" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
     <link href="https://fonts.gstatic.com" rel="preconnect">
@@ -59,153 +59,117 @@
         <section class="section dashboard">
             <div class="row">
 
-                <!-- Left side columns -->
-                <div class="col-lg-8">
-                    <div class="row">
-
-                        <!-- Cars Data Card -->
-                        <div class="col-xxl-4 col-md-6">
-                            <div class="card info-card sales-card">
-                                <div class="filter">
-                                    <a class="icon" href="{{ url('/admin/car') }}" data-bs-toggle="dropdown"><i
-                                            class="bi bi-three-dots"></i></a>
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-title">Cars Data <span>| Today</span></h5>
-                                    <div class="d-flex align-items-center">
-                                        <div
-                                            class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                                            <i class="bi bi-car"></i>
-                                        </div>
-                                        <div class="ps-3">
-                                            <h6>145</h6>
-                                            <span class="text-success small pt-1 fw-bold">12%</span> <span
-                                                class="text-muted small pt-2 ps-1">increase</span>
-                                        </div>
+                <div class="col-xl-4 col-md-6 mb-4">
+                    <a href="{{ url('/admin/car') }}" style="text-decoration: none; color: inherit;">
+                        <div class="card border-left-primary shadow h-100 py-2">
+                            <div class="card-body">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col mr-2">
+                                        <div class="card-title">
+                                            Car </div>
+                                        <div class="h5 mb-0 font-weight-bold text-gray-800">Lihat Car</div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <i class="fas fa-clipboard-list fa-2x text-primary"></i>
                                     </div>
                                 </div>
                             </div>
-                        </div><!-- End Cars Data Card -->
-
-                        <!-- Categories Cars Card -->
-                        <div class="col-xxl-4 col-md-6">
-                            <div class="card info-card sales-card">
-                                <div class="filter">
-                                    <a class="icon" href="{{ url('/admin/categorycar') }}" data-bs-toggle="dropdown"><i
-                                            class="bi bi-three-dots"></i></a>
-                                    
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-title">Categories <span>| Today</span></h5>
-                                    <div class="d-flex align-items-center">
-                                        <div
-                                            class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                                            <i class="bi bi-tags"></i>
-                                        </div>
-                                        <div class="ps-3">
-                                            <h6>145</h6>
-                                            <span class="text-success small pt-1 fw-bold">12%</span> <span
-                                                class="text-muted small pt-2 ps-1">increase</span>
-                                        </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-4 col-md-6 mb-4">
+                    <a href="{{ url('/admin/categorycar') }}" style="text-decoration: none; color: inherit;">
+                        <div class="card border-left-danger shadow h-100 py-2">
+                            <div class="card-body">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col mr-2">
+                                        <div class="card-title">
+                                            Category </div>
+                                        <div class="h5 mb-0 font-weight-bold text-gray-800">Lihat Category</div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <i class="fas fa-clipboard-list fa-2x text-danger"></i>
                                     </div>
                                 </div>
                             </div>
-                        </div><!-- End Categories Cars Card -->
-
-                        <!-- Plugs Card -->
-                        <div class="col-xxl-4 col-md-6">
-                            <div class="card info-card sales-card">
-                                <div class="filter">
-                                    <a class="icon" href="#" data-bs-toggle="dropdown"><i
-                                            class="bi bi-three-dots"></i></a>
-                                    
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-title">Plugs <span>| Today</span></h5>
-                                    <div class="d-flex align-items-center">
-                                        <div
-                                            class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                                            <i class="bi bi-plug"></i>
-                                        </div>
-                                        <div class="ps-3">
-                                            <h6>145</h6>
-                                            <span class="text-success small pt-1 fw-bold">12%</span> <span
-                                                class="text-muted small pt-2 ps-1">increase</span>
-                                        </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-4 col-md-6 mb-4">
+                    <a href="{{ url('/admin/plugs') }}" style="text-decoration: none; color: inherit;">
+                        <div class="card border-left-success shadow h-100 py-2">
+                            <div class="card-body">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col mr-2">
+                                        <div class="card-title">
+                                            Plugs </div>
+                                        <div class="h5 mb-0 font-weight-bold text-gray-800">Lihat Plugs</div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <i class="fas fa-clipboard-list fa-2x text-success"></i>
                                     </div>
                                 </div>
                             </div>
-                        </div><!-- End Plugs Card -->
-
-                        <!-- Voltages Card -->
-                        <div class="col-xxl-4 col-md-6">
-                            <div class="card info-card sales-card">
-                                <div class="filter">
-                                    <a class="icon" href="#" data-bs-toggle="dropdown"><i
-                                            class="bi bi-three-dots"></i></a>
-                                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                                        <li class="dropdown-header text-start">
-                                            <h6>Filter</h6>
-                                        </li>
-                                        <li><a class="dropdown-item" href="#">Today</a></li>
-                                        <li><a class="dropdown-item" href="#">This Month</a></li>
-                                        <li><a class="dropdown-item" href="#">This Year</a></li>
-                                    </ul>
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-title">Voltages <span>| Today</span></h5>
-                                    <div class="d-flex align-items-center">
-                                        <div
-                                            class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                                            <i class="bi bi-lightning"></i>
-                                        </div>
-                                        <div class="ps-3">
-                                            <h6>145</h6>
-                                            <span class="text-success small pt-1 fw-bold">12%</span> <span
-                                                class="text-muted small pt-2 ps-1">increase</span>
-                                        </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-4 col-md-6 mb-4">
+                    <a href="{{ url('/admin/voltages') }}" style="text-decoration: none; color: inherit;">
+                        <div class="card border-left-success shadow h-100 py-2">
+                            <div class="card-body">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col mr-2">
+                                        <div class="card-title">
+                                            Voltages </div>
+                                        <div class="h5 mb-0 font-weight-bold text-gray-800">Lihat voltages</div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <i class="fas fa-clipboard-list fa-2x text-success"></i>
                                     </div>
                                 </div>
                             </div>
-                        </div><!-- End Voltages Card -->
-
-                        <!-- Capacity Card -->
-                        <div class="col-xxl-4 col-md-6">
-                            <div class="card info-card sales-card">
-                                <div class="filter">
-                                    <a class="icon" href="#" data-bs-toggle="dropdown"><i
-                                            class="bi bi-three-dots"></i></a>
-                                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                                        <li class="dropdown-header text-start">
-                                            <h6> Filter</h6>
-                                        </li>
-
-                                        <li><a class="dropdown-item" href="#">Today</a></li>
-                                        <li><a class="dropdown-item" href="#">This Month</a></li>
-                                        <li><a class="dropdown-item" href="#">This Year</a></li>
-                                    </ul>
-                                </div>
-
-                                <div class="card-body">
-                                    <h5 class="card-title">Revenue <span>| This Month</span></h5>
-
-                                    <div class="d-flex align-items-center">
-                                        <div
-                                            class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                                            <i class="bi bi-currency-dollar"></i>
-                                        </div>
-                                        <div class="ps-3">
-                                            <h6>$3,264</h6>
-                                            <span class="text-success small pt-1 fw-bold">8%</span> <span
-                                                class="text-muted small pt-2 ps-1">increase</span>
-
-                                        </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-4 col-md-6 mb-4">
+                    <a href="{{ url('/admin/capacities') }}" style="text-decoration: none; color: inherit;">
+                        <div class="card border-left-success shadow h-100 py-2">
+                            <div class="card-body">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col mr-2">
+                                        <div class="card-title">
+                                            Capacities </div>
+                                        <div class="h5 mb-0 font-weight-bold text-gray-800">Lihat Capacities</div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <i class="fas fa-clipboard-list fa-2x text-success"></i>
                                     </div>
                                 </div>
-
                             </div>
-                        </div><!-- End Revenue Card -->
-                    </div><!-- End Right side columns -->
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-4 col-md-6 mb-4">
+                    <a href="{{ url('/admin/customers') }}" style="text-decoration: none; color: inherit;">
+                        <div class="card border-left-success shadow h-100 py-2">
+                            <div class="card-body">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col mr-2">
+                                        <div class="card-title">
+                                            Customers </div>
+                                        <div class="h5 mb-0 font-weight-bold text-gray-800">Lihat Customers</div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <i class="fas fa-clipboard-list fa-2x text-success"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+
+                
 
                 </div>
         </section>
